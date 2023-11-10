@@ -1,4 +1,4 @@
-/* ========COMMON STYLES======== */
+/* ======== COMMON STYLES ======== */
 h1,
 h2,
 h3,
@@ -65,9 +65,9 @@ body {
     padding-right: 15px;
 }
 
-/* ========/COMMON STYLES======== */
+/* ======== /COMMON STYLES ======== */
 
-/* ========HEADR STYLES======== */
+/* ======== HEADR STYLES ======== */
 .page-header {    
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 
@@ -192,9 +192,9 @@ body {
     transform: translateY(0%);
 }
 
-/* ========/HEADR STYLES======== */
+/* ======== /HEADR STYLES ======== */
 
-/* ========BODE STYLE=========== */
+/* ======== BODE STYLE =========== */
 .hero {    
     max-width: 1440px;
     height: 600px;
@@ -486,9 +486,9 @@ transform: translateY(0%);
     border-top: none;
 }
 
-/* ========/BODE STYLE=========== */
+/* ======== /BODE STYLE =========== */
 
-/* ========FOOTER============= */
+/* ======== FOOTER ============= */
 .logo-span {
     color: #4D5AE5;
 }
@@ -571,6 +571,102 @@ transform: translateY(0%);
     display: flex;    
     align-items: baseline;
 }
+/* ======== /FOOTER ============= */
+
+/* ======== BACKDROP STYLES ============= */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity 205ms linear, visibility 250ms linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;    
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* ======== /BACKDROP STYLES ============= */
+
+/* ======== MODAL WINDOW STYLES ============= */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+}
+
+.model-close-btn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    line-height: 0;
+    transition: fill 250ms linear;    
+}
+
+.modal-close-btn-icon {
+    fill: #2f2f42;
+}
+.model-close-btn:hover .modal-close-btn-icon,
+.model-close-btn:focus .modal-close-btn-icon {
+    fill: #FFFFFF;
+}
+
+.contacts-form-discription {
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+/* ======== /MODAL WINDOW STYLES ============= */
 
 
-/* ========/FOOTER============= */
+/* ======== CONTACTS FORM STYLES ============= */
+.contacts-form-field-lable {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;    
+    font-weight: 400;
+    line-height: 1.16;    
+    letter-spacing: 0.04em;
+    color: #8E8F99;    
+}
+
+.review-form-field {
+    padding-left: 38px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    background-color: #FCFCFC;
+}
+
+
+/* ======== /CONTACTS FORM STYLES ============= */
