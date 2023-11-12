@@ -443,8 +443,9 @@
         <lable class="contacts-form-field-lable" for="user-first-name">
           Name
         </lable>
+        <div class="contacts-form-unput-wrapper">
         <input 
-        class="review-form-field" 
+        class="contacts-form-name" 
         type="text" 
         name="user_first_name" 
         id="user-first-name"
@@ -452,32 +453,45 @@
         pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙґҐ']+"
         title="Ivan"
         />
+        <svg class="contacts-form-field-icon" widht="18" height="18">
+        <use href="./images/icons.svg#icon-person-black"></use>  
+        </svg> 
+        </div>
       </div>
-      <div class="contacts-form-field-wrapper">
-        <lable class="contacts-form-field-lable" for="user-phon-nomber">
+      <div class="contacts-form-field-wrapper">        
+        <lable class="contacts-form-field-lable" for="user-phone-nomber">
           Phone
         </lable>
-        <input 
-        class="review-form-field"
-        type="tel"
-        name="user_phon_nomber"
-        id="user-phon-nomber"
-        required
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="xxx-xxx-xx-xx"
-         />
+        <div class="contacts-form-unput-wrapper">
+          <input 
+          class="contacts-form-phone" 
+          type="tel" 
+          name="user_phone_nomber" 
+          id="user-phone-nomber" 
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+          title="xxx-xxx-xx-xx" />
+          <svg class="contacts-form-field-icon-phone">
+            <use href="./images/icons.svg#icon-phone-black"></use>
+          </svg>
+        </div>        
       </div>
-      <div class="contacts-form-field-wrapper">
+      <div class="contacts-form-field-wrapper">      
         <lable class="contacts-form-field-lable" for="user-email">
           Email
-        </lable>
-        <input 
-        class="review-form-field" 
+      </lable>
+        <div class="contacts-form-unput-wrapper">
+         <input 
+        class="contacts-form-email" 
         type="email"
         name="user_email"
         id="user-email"
-        required
+        required        
         />
+        <svg class="contacts-form-field-icon-email">
+          <use href="./images/icons.svg#icon-email-black"></use>
+        </svg>
+        </div>
       </div>
       <div class="contacts-form-field-wrapper">
         <lable class="contacts-form-field-lable" for="user-comment">Comment</lable>
@@ -485,9 +499,7 @@
         class="contacts-form-message" 
         name="user_comment" 
         id="user-comment" 
-        placeholder="Text input"></textarea>
-      </div>
-      <div class="contacts-form-checkbox-wrapper">
+        placeholder="Text input"></textarea>           
         <input 
         class="contacts-form-checkbox" 
         type="checkbox" 
@@ -496,7 +508,16 @@
         value="true"
         required
         />
-        <label class="contacts-form-checkbox" for="user-policy">
+      </div>
+      <div>     
+        <label class="contacts-form-checkbox-lable" for="user-policy">
+          <span class="contacts-form-own-checkbox">
+            <svg class="contacts-form-own-checkbox-icon" 
+            width="16" 
+            height="16">
+              <use href="./images/icons.svg#icon-property-click"></use>
+            </svg>
+          </span>
           I accept the terms and conditions of the <a class="privacy-policy-link">Privacy Policy</a>
         </label>
       </div>
