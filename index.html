@@ -447,12 +447,12 @@
   </div>
   </footer>
 <!--BACKDROP-->
-  <div class="backdrop"> is-open
+  <div class="backdrop is-open">
     <div class="modal">            
       <button class="model-close-btn" type="button">        
         <svg class="modal-close-btn-icon" 
-        width="8px" 
-        height="8px" 
+        width="8" 
+        height="8" 
         aria-label="modal close button">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
@@ -462,28 +462,28 @@
       </p>
       <form class="contacts-form">
       <div class="contacts-form-field-wrapper">
-        <lable class="contacts-form-field-lable" for="user-first-name">
+        <label class="contacts-form-field-lable" for="user-name">
           Name
-        </lable>
+        </label>
         <div class="contacts-form-unput-wrapper">
-        <input 
-        class="contacts-form-name" 
-        type="text" 
-        name="user_first_name" 
-        id="user-first-name"
-        required
-        pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙґҐ']+"
-        title="Ivan"
-        />
-        <svg class="contacts-form-field-icon" widht="18" height="18">
-        <use href="./images/icons.svg#icon-person-black"></use>  
-        </svg> 
+          <input 
+          class="contacts-form-name" 
+          type="text" 
+          name="user_name" 
+          id="user-name"
+          required
+          pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙґҐ']+"
+          title="Ivan"
+          />
+          <svg class="contacts-form-field-icon" widht="24" height="24">
+          <use href="./images/icons.svg#icon-person-black"></use>  
+          </svg> 
         </div>
       </div>
       <div class="contacts-form-field-wrapper">        
-        <lable class="contacts-form-field-lable" for="user-phone-nomber">
+        <label class="contacts-form-field-lable" for="user-phone-nomber">
           Phone
-        </lable>
+        </label>
         <div class="contacts-form-unput-wrapper">
           <input 
           class="contacts-form-phone" 
@@ -493,15 +493,15 @@
           required
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
           title="xxx-xxx-xx-xx" />
-          <svg class="contacts-form-field-icon-phone">
+          <svg class="contacts-form-field-icon-phone" widht="18" height="24">
             <use href="./images/icons.svg#icon-phone-black"></use>
           </svg>
         </div>        
       </div>
       <div class="contacts-form-field-wrapper">      
-        <lable class="contacts-form-field-lable" for="user-email">
+        <label class="contacts-form-field-lable" for="user-email">
           Email
-      </lable>
+      </label>
         <div class="contacts-form-unput-wrapper">
          <input 
         class="contacts-form-email" 
@@ -510,16 +510,16 @@
         id="user-email"
         required        
         />
-        <svg class="contacts-form-field-icon-email">
+        <svg class="contacts-form-field-icon-email" widht="18" height="24">
           <use href="./images/icons.svg#icon-email-black"></use>
         </svg>
         </div>
       </div>
-      <div class="contacts-form-field-wrapper">
-        <lable class="contacts-form-field-lable" for="user-comment">Comment</lable>
+      <div class="contacts-form-field-wrapper-textarea">
+        <label class="contacts-form-field-lable" for="user-comment">Comment</label>
         <textarea 
         class="contacts-form-message" 
-        name="user_comment" 
+        name="user-scomment" 
         id="user-comment" 
         placeholder="Text input"></textarea>           
         <input 
@@ -535,16 +535,16 @@
         <input
          class="contacts-form-checkbox visually-hidden"
               type="checkbox"
-              name="user_policy"
+              name="user-privacy"
               value="true"
-              id="user-policy"
+              id="user-privacy"
               required
         />     
-        <label class="contacts-form-checkbox-lable" for="user-policy">
+        <label class="contacts-form-checkbox-lable" for="user-privacys">
           <span class="contacts-form-own-checkbox">
             <svg class="contacts-form-own-checkbox-icon" 
-            width="16" 
-            height="16">
+            width="10" 
+            height="8">
               <use href="./images/icons.svg#icon-property-click"></use>
             </svg>
           </span>
