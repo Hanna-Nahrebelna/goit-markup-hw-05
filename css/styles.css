@@ -608,7 +608,7 @@ transform: translateY(0%);
 }
 
 input::placeholder {
-    color #ffffff;
+    color: #ffffff;
     opacity: 1;
 }
 
@@ -631,9 +631,7 @@ input::placeholder {
 }
 
 .footer-send-button {
-    margin-left: 16px;
-    width: 24px;
-    height: 24px;
+    margin-left: 16px;    
 }
 
 .footer-button-submit:hover,
@@ -702,11 +700,13 @@ input::placeholder {
 }
 
 .model-close-btn:hover {
+    background-color: #404bbf;
     border: none;
 }
 
 .model-close-btn:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-close-btn-icon {    
@@ -776,9 +776,7 @@ input::placeholder {
 }
 
 .contacts-form-field-icon {
-    position: absolute;
-    width: 18px;
-    height: 24px;
+    position: absolute;    
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
