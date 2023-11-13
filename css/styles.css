@@ -529,7 +529,7 @@ transform: translateY(0%);
 }
 
 .text-social-media {
-    margin-bottom: 16px;
+    margin-bottom: 16px;    
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -574,6 +574,7 @@ transform: translateY(0%);
 
 .footer-form {
     margin-bottom: 16px;
+    margin-left: 80px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -583,7 +584,8 @@ transform: translateY(0%);
 
 .footer-form-customer {
     display: flex;
-    gap 24px;
+    gap: 24px;
+    margin-left: 80px;
 }
 
 .footer-form-email {
