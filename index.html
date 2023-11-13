@@ -416,7 +416,7 @@
         </li>     
         <li class="footer-social-list">
           <a class="footer-sosial" href="">
-            <svg class="footer-social-link" width="24" height="24">
+            <svg class="footer-social-link">
               <use href="./images/icons.svg#icon-linkedin-our-team"></use>
             </svg>
           </a>
@@ -430,14 +430,14 @@
             <input 
             class="footer-form-email" 
             name="footer-form-name" 
-            type="email" 
+            type="email"
+            id="footer-form-name"
             placeholder="E-mail" />
         </label>        
         <button class="footer-button-submit" type="submit">
           Subscribe
             <svg 
-            class="footer-send-button" 
-            width="24px" height="24px" 
+            class="footer-send-button"             
             aria-label="footer button submit">
               <use href="./images/icons.svg#icon-icon-submit-footer"></use>
             </svg>          
@@ -469,13 +469,13 @@
           <input 
           class="contacts-form-name" 
           type="text" 
-          name="user_name" 
+          name="user-name" 
           id="user-name"
           required
           pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙґҐ']+"
           title="Ivan"
           />
-          <svg class="contacts-form-field-icon" widht="24" height="24">
+          <svg class="contacts-form-field-icon">
           <use href="./images/icons.svg#icon-person-black"></use>  
           </svg> 
         </div>
@@ -486,14 +486,14 @@
         </label>
         <div class="contacts-form-unput-wrapper">
           <input 
-          class="contacts-form-phone" 
+          class="contacts-form-name" 
           type="tel" 
-          name="user_phone_nomber" 
+          name="user-phone-nomber" 
           id="user-phone-nomber" 
           required
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
           title="xxx-xxx-xx-xx" />
-          <svg class="contacts-form-field-icon-phone" widht="18" height="24">
+          <svg class="contacts-form-field-icon">
             <use href="./images/icons.svg#icon-phone-black"></use>
           </svg>
         </div>        
@@ -504,13 +504,13 @@
       </label>
         <div class="contacts-form-unput-wrapper">
          <input 
-        class="contacts-form-email" 
+        class="contacts-form-name" 
         type="email"
         name="user_email"
         id="user-email"
         required        
         />
-        <svg class="contacts-form-field-icon-email" widht="18" height="24">
+        <svg class="contacts-form-field-icon">
           <use href="./images/icons.svg#icon-email-black"></use>
         </svg>
         </div>
@@ -519,7 +519,7 @@
         <label class="contacts-form-field-lable" for="user-comment">Comment</label>
         <textarea 
         class="contacts-form-message" 
-        name="user-scomment" 
+        name="user-comment" 
         id="user-comment" 
         placeholder="Text input"></textarea>           
         <input 
