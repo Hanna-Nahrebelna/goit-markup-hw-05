@@ -617,19 +617,22 @@ input::placeholder {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
+    letter-spacing: 0.04em;    
+    cursor: pointer;    
     border: none;
     border-radius: 4px;
+    color: #ffffff;
+    background-color: #4D5AE5;
 }
 
 .footer-send-button {
-    margin-left: 16px;    
+    margin-left: 16px;
 }
 
-
+.footer-button-submit:hover,
+.footer-button-submit:focus {
+    color: #ffffff;
+}
 
 /* ======== /FOOTER ============= */
 
